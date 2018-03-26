@@ -1,0 +1,16 @@
+.radioButton{
+    width: 250px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.radio > * {
+    display: inline-flex;
+}
