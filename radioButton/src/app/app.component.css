@@ -11,6 +11,7 @@
     box-sizing: border-box;
 }
 
-.radio > * {
+/deep/ .radio > * {
     display: inline-flex;
+    margin-right: 5px;
 }
