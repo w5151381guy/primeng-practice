@@ -13,12 +13,12 @@ interface City {
 
 export class AppComponent {
 
-  cities: City[]
+  dropdownitems: City[]
 
-  selectedCity: City
+  selectedDropdownitem: City
 
   constructor() {
-    this.cities = [
+    this.dropdownitems = [
       {name: 'New York', code: 'NY'},
       {name: 'Rome', code: 'RM'},
       {name: 'London', code: 'LDN'},
