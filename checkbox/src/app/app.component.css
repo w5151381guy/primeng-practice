@@ -1,0 +1,17 @@
+.checkbox{
+    width: 250px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.check {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+/deep/ .check > * {
+    display: inline-flex;
+    margin-right: 5px;
+}

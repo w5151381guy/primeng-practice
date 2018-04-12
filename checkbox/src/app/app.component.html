@@ -1,0 +1,6 @@
+<div class="checkbox">
+    <p-checkbox class="check" value="New York" label="New York" [(ngModel)]="checkboxItems"></p-checkbox>
+    <p-checkbox class="check" value="San Francisco" label="San Francisco" [(ngModel)]="checkboxItems"></p-checkbox>
+    <p-checkbox class="check" value="Los Angeles" label="Los Angeles" [(ngModel)]="checkboxItems"></p-checkbox>
+</div>
+Selected Cities: <span *ngFor="let item of checkboxItems" style="margin-right:10px">{{item}}</span>
