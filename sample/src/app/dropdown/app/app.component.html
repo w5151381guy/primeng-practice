@@ -1,0 +1,2 @@
+<p-dropdown [options]="dropdownitems" [style]="{'width':'150px','font-size':'14px'}" [filter]="true" [(ngModel)]="selectedDropdownitem" placeholder="Select a City" optionLabel="name"></p-dropdown>
+<p>Selected City: {{selectedDropdownitem ? selectedDropdownitem.name : 'none'}}</p>

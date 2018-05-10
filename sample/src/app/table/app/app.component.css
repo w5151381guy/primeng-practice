@@ -1,0 +1,4 @@
+/deep/ .ui-picklist-source-controls,
+/deep/ .ui-picklist-target-controls {
+  display: none !important;
+}

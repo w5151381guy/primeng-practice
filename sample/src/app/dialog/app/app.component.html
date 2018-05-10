@@ -1,0 +1,10 @@
+<p-dialog header="Demo" [(visible)]="display" modal="modal" [responsive]="true" [width]="350">
+    <p>
+        this is a simple dialog demo page. Want to see more details please check <a href="https://www.primefaces.org/primeng/#/dialog">this website</a>
+    </p>
+    <p-footer>
+        <button pButton type="button" (click)="handleConfirmClick()" label="確定"></button>
+        <button pButton type="button" (click)="handleCancelClick()" label="取消" class="ui-button-secondary"></button>
+    </p-footer>
+</p-dialog>
+<button pButton type="button" (click)="showDialog()" label="顯示popup"></button>
