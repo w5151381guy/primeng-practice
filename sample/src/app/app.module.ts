@@ -13,11 +13,13 @@ import { RadioButtonDemoModule } from './radioButton/app/app.module'
 import { DataTableDemoModule } from './table/app/app.module'
 import { TabViewDemoModule } from './tabview/app/app.module'
 import { TreeDemoModule } from './tree/app/app.module'
+import { CalendarDemoModule } from './calendar/app/app.module'
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     ButtonDemoModule,
+    CalendarDemoModule,
     CheckboxDemoModule,
     DialogDemoModule,
     DropdownDemoModule,
