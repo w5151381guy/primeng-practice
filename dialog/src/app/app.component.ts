@@ -3,9 +3,9 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'pDialog',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class DialogComponent {
   text: string
   display: boolean = false
   handleConfirmClick() {
@@ -17,6 +17,6 @@ export class AppComponent {
     this.display = false
   }
   showDialog() {
-    this.display = true;
+    this.display = true
   }
 }

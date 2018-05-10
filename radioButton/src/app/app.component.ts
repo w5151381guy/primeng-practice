@@ -3,8 +3,8 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'radioButton',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class RadioButtonComponent {
   value: string
 }

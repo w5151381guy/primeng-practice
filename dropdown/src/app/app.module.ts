@@ -4,13 +4,20 @@ import { FormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
-import { AppComponent } from './app.component'
+import { DropdownComponent } from './app.component'
 import { DropdownModule } from 'primeng/primeng'
 
 @NgModule({
-  imports: [BrowserModule, BrowserAnimationsModule, CommonModule, FormsModule, DropdownModule],
-  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    CommonModule,
+    FormsModule,
+    DropdownModule,
+  ],
+  declarations: [DropdownComponent],
+  exports: [DropdownComponent, CommonModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [DropdownComponent],
 })
-export class AppModule { }
+export class DropdownDemoModule {}

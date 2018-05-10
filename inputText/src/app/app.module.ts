@@ -2,14 +2,22 @@ import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { CommonModule } from '@angular/common'
 
-import { AppComponent } from './app.component'
-import { InputTextModule }  from 'primeng/primeng'
+import { InputTextComponent } from './app.component'
+import { InputTextModule } from 'primeng/primeng'
 
 @NgModule({
-  imports: [BrowserModule, BrowserAnimationsModule, FormsModule, InputTextModule],
-  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    CommonModule,
+    FormsModule,
+    InputTextModule,
+  ],
+  declarations: [InputTextComponent],
+  exports: [InputTextComponent, CommonModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [InputTextComponent],
 })
-export class AppModule { }
+export class InputTextDemoModule {}

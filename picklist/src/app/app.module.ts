@@ -2,19 +2,22 @@ import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { CommonModule } from '@angular/common'
 
-import { AppComponent } from './app.component'
+import { PickListComponent } from './app.component'
 import { PickListModule } from 'primeng/primeng'
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    CommonModule,
     FormsModule,
     PickListModule,
   ],
-  declarations: [AppComponent],
+  declarations: [PickListComponent],
   providers: [],
-  bootstrap: [AppComponent],
+  exports: [PickListComponent, CommonModule, FormsModule],
+  bootstrap: [PickListComponent],
 })
-export class AppModule {}
+export class PickListDemoModule {}
