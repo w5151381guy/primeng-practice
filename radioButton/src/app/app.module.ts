@@ -4,20 +4,20 @@ import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CommonModule } from '@angular/common'
 
-import { RadioButtonComponent } from './app.component'
+import { AppComponent } from './app.component'
 import { RadioButtonModule } from 'primeng/primeng'
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CommonModule,
+    // CommonModule,
     FormsModule,
     RadioButtonModule,
   ],
-  declarations: [RadioButtonComponent],
+  declarations: [AppComponent],
   providers: [],
-  exports: [RadioButtonComponent, CommonModule, FormsModule],
-  bootstrap: [RadioButtonComponent],
+  // exports: [RadioButtonComponent, CommonModule, FormsModule],
+  bootstrap: [AppComponent],
 })
-export class RadioButtonDemoModule {}
+export class AppModule {}

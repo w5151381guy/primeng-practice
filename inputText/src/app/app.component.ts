@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class InputTextComponent {
+export class AppComponent {
   inputText: string
   text: string
   onChange(e) {

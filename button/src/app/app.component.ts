@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class ButtonComponent {
+export class AppComponent {
   text: string
   handleConfirmClick() {
     this.text = `You click: 確定`

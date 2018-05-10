@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class DialogComponent {
+export class AppComponent {
   text: string
   display: boolean = false
   handleConfirmClick() {

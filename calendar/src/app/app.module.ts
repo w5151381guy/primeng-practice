@@ -4,20 +4,20 @@ import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CommonModule } from '@angular/common'
 
-import { CalendarComponent } from './app.component'
+import { AppComponent } from './app.component'
 import { CalendarModule } from 'primeng/primeng'
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CommonModule,
+    // CommonModule,
     FormsModule,
     CalendarModule,
   ],
-  declarations: [CalendarComponent],
-  exports: [CalendarComponent, CommonModule, FormsModule],
+  declarations: [AppComponent],
+  // exports: [CalendarComponent, CommonModule, FormsModule],
   providers: [],
-  bootstrap: [CalendarComponent],
+  bootstrap: [AppComponent],
 })
-export class CalendarDemoModule {}
+export class AppModule {}

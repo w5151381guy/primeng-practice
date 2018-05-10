@@ -10,7 +10,7 @@ interface City {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class DropdownComponent {
+export class AppComponent {
   dropdownitems: City[]
 
   selectedDropdownitem: City

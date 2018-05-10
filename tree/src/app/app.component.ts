@@ -6,7 +6,7 @@ import { TreeNode } from 'primeng/primeng'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class TreeComponent {
+export class AppComponent {
   filesTree: TreeNode[]
 
   selectedFile: TreeNode[]

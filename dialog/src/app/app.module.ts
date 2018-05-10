@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CommonModule } from '@angular/common'
 
-import { DialogComponent } from './app.component'
+import { AppComponent } from './app.component'
 import { ButtonModule } from 'primeng/primeng'
 import { DialogModule } from 'primeng/primeng'
 
@@ -12,14 +12,14 @@ import { DialogModule } from 'primeng/primeng'
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CommonModule,
+    // CommonModule,
     FormsModule,
     ButtonModule,
     DialogModule,
   ],
-  declarations: [DialogComponent],
-  exports: [DialogComponent, CommonModule, FormsModule],
+  declarations: [AppComponent],
+  // exports: [DialogComponent, CommonModule, FormsModule],
   providers: [],
-  bootstrap: [DialogComponent],
+  bootstrap: [AppComponent],
 })
-export class DialogDemoModule {}
+export class AppModule {}

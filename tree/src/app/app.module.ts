@@ -4,20 +4,20 @@ import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CommonModule } from '@angular/common'
 
-import { TreeComponent } from './app.component'
+import { AppComponent } from './app.component'
 import { TreeModule } from 'primeng/primeng'
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CommonModule,
+    // CommonModule,
     FormsModule,
     TreeModule,
   ],
-  declarations: [TreeComponent],
-  exports: [TreeComponent, CommonModule, FormsModule],
+  declarations: [AppComponent],
+  // exports: [TreeComponent, CommonModule, FormsModule],
   providers: [],
-  bootstrap: [TreeComponent],
+  bootstrap: [AppComponent],
 })
-export class TreeDemoModule {}
+export class AppModule {}

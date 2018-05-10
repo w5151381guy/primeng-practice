@@ -4,20 +4,20 @@ import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CommonModule } from '@angular/common'
 
-import { ButtonComponent } from './app.component'
+import { AppComponent } from './app.component'
 import { ButtonModule } from 'primeng/primeng'
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CommonModule,
+    // CommonModule,
     FormsModule,
     ButtonModule,
   ],
-  declarations: [ButtonComponent],
-  exports: [ButtonComponent, CommonModule, FormsModule],
+  declarations: [AppComponent],
+  // exports: [ButtonComponent, CommonModule, FormsModule],
   providers: [],
-  bootstrap: [ButtonComponent],
+  bootstrap: [AppComponent],
 })
-export class ButtonDemoModule {}
+export class AppModule { }

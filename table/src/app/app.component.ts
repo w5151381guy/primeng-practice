@@ -11,7 +11,7 @@ interface Source {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class TableComponent {
+export class AppComponent {
   sourceItems: Source[]
 
   cols: any[]
