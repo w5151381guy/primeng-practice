@@ -1,3 +1,3 @@
-<p-dataTable [value]="sourceItems">
-    <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header"></p-column>
+<p-dataTable [value]="sourceItems" sortMode="multiple" [responsive]="true" [rows]="5" [paginator]="true">
+    <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header" [sortable]="true"></p-column>
 </p-dataTable>
